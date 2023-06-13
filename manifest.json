@@ -1,12 +1,12 @@
 {
-  "name": "GlidePush",
+  "name": "Glide Push",
   "description": "Glide Browser Message Push",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
     "service_worker": "init.js"
   },
-  "permissions": ["storage"],
+  "permissions": ["storage", "notifications"],
   "action": {
     "default_popup": "config.html",
     "default_icon": {

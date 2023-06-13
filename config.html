@@ -3,13 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Glide Browser Message Push</title>
+    <script src="script.js" type="application/javascript"></script>
 </head>
+
+<style type="text/css">
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #333333;
+        background-color: #ffffff;
+    }
+
+    #title {
+
+    }
+
+    #push_token, #server_url {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        width: 300px;
+        height: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    label {
+        margin-top: 8px;
+    }
+
+    #push_token_btn {
+        width: 100px;
+        height: 34px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: #fff;
+        cursor: pointer;
+        display: block;
+    }
+
+</style>
+
 <body>
 
 <div>
-    <h5>Push Token</h5>
-    <input type="text" id="push_token" value="">
-    <button id="push_token_btn">Save</button>
+    <h3 id="title">Connect to Server</h3>
+    <div class="field">
+        <label for="server_url">Server URL</label><br>
+        <input type="text" id="server_url" value=""/>
+    </div>
+    <div class="field">
+        <label for="push_token">Token</label><br>
+        <input type="text" id="push_token" value=""/>
+    </div>
+    <button id="push_token_btn">Connect</button>
 </div>
 
 </body>
